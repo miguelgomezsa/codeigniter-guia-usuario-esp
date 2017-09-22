@@ -3,8 +3,6 @@
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
-<!-- Mirrored from codeigniter.com/user_guide/libraries/email.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2017 09:37:30 GMT -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +12,11 @@
 
   
   
-    <link rel="shortcut icon" href="../_static/ci-icon.html"/>
+    <link rel="shortcut icon" href="../_static/ci-icon.ico"/>
   
 
   
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
   
   
@@ -32,13 +30,13 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.1.5 documentation" href="../index-2.html"/>
+    <link rel="top" title="CodeIgniter 3.1.5 documentation" href="../index.html"/>
         <link rel="up" title="Libraries" href="index.html"/>
         <link rel="next" title="Encrypt Class" href="encrypt.html"/>
         <link rel="prev" title="Config Class" href="config.html"/> 
 
   
-  <script src="../../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
 </head>
 
@@ -129,7 +127,7 @@
 <li class="toctree-l2"><a class="reference internal" href="calendar.html">Calendaring Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cart.html">Shopping Cart Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="config.html">Config Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Email Class</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Email Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="encrypt.html">Encrypt Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="encryption.html">Encryption Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file_uploading.html">File Uploading Class</a></li>
@@ -220,11 +218,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-nav-search">
         
-          <a href="../index-2.html" class="fa fa-home"> CodeIgniter</a>
+          <a href="../index.html" class="fa fa-home"> CodeIgniter</a>
         
         
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="https://codeigniter.com/user_guide/search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -315,7 +313,7 @@
 <li class="toctree-l2"><a class="reference internal" href="calendar.html">Calendaring Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cart.html">Shopping Cart Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="config.html">Config Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Email Class</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Email Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="encrypt.html">Encrypt Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="encryption.html">Encryption Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file_uploading.html">File Uploading Class</a></li>
@@ -400,7 +398,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index-2.html">CodeIgniter</a>
+        <a href="../index.html">CodeIgniter</a>
       </nav>
 
 
@@ -409,7 +407,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../index-2.html">Docs</a> &raquo;</li>
+    <li><a href="../index.html">Docs</a> &raquo;</li>
       
         <li><a href="index.html">Libraries</a> &raquo;</li>
       
@@ -467,10 +465,10 @@ This example assumes you are sending the email from one of your
 <a class="reference internal" href="../general/controllers.html"><em>controllers</em></a>.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">);</span>
 
-<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="2f56405a5d6f4a574e425f434a014c4042">[email&#160;protected]</a>&#39;</span><span class="p">,</span> <span class="s1">&#39;Your Name&#39;</span><span class="p">);</span>
-<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">to</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="e3908c8e868c8d86a3869b828e938f86cd808c8e">[email&#160;protected]</a>&#39;</span><span class="p">);</span>
-<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">cc</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="76171819021e130436171819021e13045b130e171b061a135815191b">[email&#160;protected]</a>&#39;</span><span class="p">);</span>
-<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">bcc</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="d6a2beb3bb96a2beb3bfa4fbb3aeb7bba6bab3f8b5b9bb">[email&#160;protected]</a>&#39;</span><span class="p">);</span>
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s1">&#39;your@example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;Your Name&#39;</span><span class="p">);</span>
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">to</span><span class="p">(</span><span class="s1">&#39;someone@example.com&#39;</span><span class="p">);</span>
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">cc</span><span class="p">(</span><span class="s1">&#39;another@another-example.com&#39;</span><span class="p">);</span>
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">bcc</span><span class="p">(</span><span class="s1">&#39;them@their-example.com&#39;</span><span class="p">);</span>
 
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">subject</span><span class="p">(</span><span class="s1">&#39;Email Test&#39;</span><span class="p">);</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">message</span><span class="p">(</span><span class="s1">&#39;Testing the email class.&#39;</span><span class="p">);</span>
@@ -687,11 +685,11 @@ message like this:</p>
 </tbody>
 </table>
 <p>Sets the email address and name of the person sending the email:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="077e687247627f666a776b622964686a">[email&#160;protected]</a>&#39;</span><span class="p">,</span> <span class="s1">&#39;Your Name&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s1">&#39;you@example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;Your Name&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>You can also set a Return-Path, to help redirect undelivered mail:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="3a43554f7a5f425b574a565f14595557">[email&#160;protected]</a>&#39;</span><span class="p">,</span> <span class="s1">&#39;Your Name&#39;</span><span class="p">,</span> <span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="e496819091968a8180bb8189858d8897a4819c8589948881ca878b89">[email&#160;protected]</a>&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s1">&#39;you@example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;Your Name&#39;</span><span class="p">,</span> <span class="s1">&#39;returned_emails@example.com&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -724,7 +722,7 @@ your protocol.</p>
 </table>
 <p>Sets the reply-to address. If the information is not provided the
 information in the :meth:from method is used. Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">reply_to</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="ea93859faa8f928b879a868fc4898587">[email&#160;protected]</a>&#39;</span><span class="p">,</span> <span class="s1">&#39;Your Name&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">reply_to</span><span class="p">(</span><span class="s1">&#39;you@example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;Your Name&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -751,14 +749,14 @@ information in the :meth:from method is used. Example:</p>
 </table>
 <p>Sets the email address(s) of the recipient(s). Can be a single e-mail,
 a comma-delimited list or an array:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">to</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="c7b4a8aaa2a8a9a287a2bfa6aab7aba2e9a4a8aa">[email&#160;protected]</a>&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">to</span><span class="p">(</span><span class="s1">&#39;someone@example.com&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
-<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">to</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="7718191237120f161a071b125914181a">[email&#160;protected]</a>, <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="3f4b48507f5a475e524f535a115c5052">[email&#160;protected]</a>, <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="62160a10070722071a030f120e074c010d0f">[email&#160;protected]</a>&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">to</span><span class="p">(</span><span class="s1">&#39;one@example.com, two@example.com, three@example.com&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">to</span><span class="p">(</span>
-        <span class="k">array</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="bbd4d5defbdec3dad6cbd7de95d8d4d6">[email&#160;protected]</a>&#39;</span><span class="p">,</span> <span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="c4b0b3ab84a1bca5a9b4a8a1eaa7aba9">[email&#160;protected]</a>&#39;</span><span class="p">,</span> <span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="403428322525002538212d302c256e232f2d">[email&#160;protected]</a>&#39;</span><span class="p">)</span>
+        <span class="k">array</span><span class="p">(</span><span class="s1">&#39;one@example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;two@example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;three@example.com&#39;</span><span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -956,7 +954,7 @@ permitting the data to be reset between cycles.</p>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">clear</span><span class="p">();</span>
 
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">to</span><span class="p">(</span><span class="nv">$address</span><span class="p">);</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s1">&#39;<a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="6811071d1a280d10090518040d460b0705">[email&#160;protected]</a>&#39;</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">from</span><span class="p">(</span><span class="s1">&#39;your@example.com&#39;</span><span class="p">);</span>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">subject</span><span class="p">(</span><span class="s1">&#39;Here is your info &#39;</span><span class="o">.</span><span class="nv">$name</span><span class="p">);</span>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">message</span><span class="p">(</span><span class="s1">&#39;Hi &#39;</span><span class="o">.</span><span class="nv">$name</span><span class="o">.</span><span class="s1">&#39; Here is the info you requested.&#39;</span><span class="p">);</span>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">send</span><span class="p">();</span>
@@ -1174,7 +1172,7 @@ Valid options are: <strong>headers</strong>, <strong>subject</strong>, <strong>b
     </p>
   </div>
 
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>.
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
   
 </footer>
         </div>
@@ -1188,7 +1186,7 @@ Valid options are: <strong>headers</strong>, <strong>subject</strong>, <strong>b
 
   
 
-    <script>!function(e,t,r,n,c,h,o){function a(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return r}try{for(c=e.getElementsByTagName('a'),o='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(h=c[n]).href.indexOf(o))>-1&&(h.href='mailto:'+a(h.href,t+o.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(h=c[n]).parentNode.replaceChild(e.createTextNode(a(h.getAttribute('data-cfemail'),0)),h)}catch(e){}}catch(e){}}(document);</script><script type="text/javascript">
+    <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'3.1.5',
@@ -1218,6 +1216,4 @@ Valid options are: <strong>headers</strong>, <strong>subject</strong>, <strong>b
    
 
 </body>
-
-<!-- Mirrored from codeigniter.com/user_guide/libraries/email.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2017 09:37:30 GMT -->
 </html>
