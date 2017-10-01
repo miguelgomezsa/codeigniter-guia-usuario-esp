@@ -429,20 +429,20 @@
 text.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#loading-this-helper" id="id1">Loading this Helper</a></li>
-<li><a class="reference internal" href="#available-functions" id="id2">Available Functions</a></li>
+<li><a class="reference internal" href="#loading-this-helper" id="id1">Cargar este Helper</a></li>
+<li><a class="reference internal" href="#available-functions" id="id2">Funciones Disponibles</a></li>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="loading-this-helper">
-<h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Permalink to this headline">¶</a></h2>
-<p>This helper is loaded using the following code:</p>
+<h2><a class="toc-backref" href="#id1">Cargar este Helper</a><a class="headerlink" href="#loading-this-helper" title="Permalink to this headline">¶</a></h2>
+<p>Este helper se carga usando el siguiente codigo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="available-functions">
-<h2><a class="toc-backref" href="#id2">Available Functions</a><a class="headerlink" href="#available-functions" title="Permalink to this headline">¶</a></h2>
-<p>The following functions are available:</p>
+<h2><a class="toc-backref" href="#id2">Funciones Disponibles</a><a class="headerlink" href="#available-functions" title="Permalink to this headline">¶</a></h2>
+<p>Las siguientes funciones estan disponibles:</p>
 <dl class="function">
 <dt id="word_limiter">
 <tt class="descname">word_limiter</tt><big>(</big><em>$str</em><span class="optional">[</span>, <em>$limit = 100</em><span class="optional">[</span>, <em>$end_char = '&amp;#8230;'</em><span class="optional">]</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#word_limiter" title="Permalink to this definition">¶</a></dt>
@@ -450,7 +450,7 @@ text.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$limit</strong> (<em>int</em>) &#8211; Limit</li>
 <li><strong>$end_char</strong> (<em>string</em>) &#8211; End character (usually an ellipsis)</li>
@@ -482,7 +482,7 @@ default it adds an ellipsis.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$n</strong> (<em>int</em>) &#8211; Number of characters</li>
 <li><strong>$end_char</strong> (<em>string</em>) &#8211; End character (usually an ellipsis)</li>
@@ -500,7 +500,7 @@ default it adds an ellipsis.</p>
 <p>Truncates a string to the number of <em>characters</em> specified. It
 maintains the integrity of words so the character count may be slightly
 more or less than what you specify.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$string</span> <span class="o">=</span> <span class="s2">&quot;Here is a nice text string consisting of eleven words.&quot;</span><span class="p">;</span>
 <span class="nv">$string</span> <span class="o">=</span> <span class="nx">character_limiter</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
 <span class="c1">// Returns:  Here is a nice text string</span>
@@ -522,7 +522,7 @@ see the <a class="reference internal" href="#ellipsize" title="ellipsize"><tt cl
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 </ul>
 </td>
@@ -542,7 +542,7 @@ reliably in a database. There is some dependence on your server&#8217;s
 supported character sets, so it may not be 100% reliable in all cases,
 but for the most part it should correctly identify characters outside
 the normal range (like accented characters).</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$string</span> <span class="o">=</span> <span class="nx">ascii_to_entities</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -555,7 +555,7 @@ the normal range (like accented characters).</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 </ul>
 </td>
@@ -571,7 +571,7 @@ the normal range (like accented characters).</p>
 <p>Transliterates high ASCII characters to low ASCII equivalents. Useful
 when non-English characters need to be used where only standard ASCII
 characters are safely used, for instance, in URLs.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$string</span> <span class="o">=</span> <span class="nx">convert_accented_characters</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -590,7 +590,7 @@ from array for transliteration.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$censored</strong> (<em>array</em>) &#8211; List of bad words to censor</li>
 <li><strong>$replacement</strong> (<em>string</em>) &#8211; What to replace bad words with</li>
@@ -610,7 +610,7 @@ will contain the original string. The second will contain an array of
 words which you disallow. The third (optional) parameter can contain
 a replacement value for the words. If not specified they are replaced
 with pound signs: ####.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$disallowed</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;darn&#39;</span><span class="p">,</span> <span class="s1">&#39;shucks&#39;</span><span class="p">,</span> <span class="s1">&#39;golly&#39;</span><span class="p">,</span> <span class="s1">&#39;phooey&#39;</span><span class="p">);</span>
 <span class="nv">$string</span> <span class="o">=</span> <span class="nx">word_censor</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="nv">$disallowed</span><span class="p">,</span> <span class="s1">&#39;Beep!&#39;</span><span class="p">);</span>
 </pre></div>
@@ -624,7 +624,7 @@ with pound signs: ####.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 </ul>
 </td>
@@ -652,7 +652,7 @@ colors used are the ones specified in your php.ini file.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$phrase</strong> (<em>string</em>) &#8211; Phrase to highlight</li>
 <li><strong>$tag_open</strong> (<em>string</em>) &#8211; Opening tag used for the highlight</li>
@@ -672,7 +672,7 @@ colors used are the ones specified in your php.ini file.</p>
 contain the original string, the second will contain the phrase you wish
 to highlight. The third and fourth parameters will contain the
 opening/closing HTML tags you would like the phrase wrapped in.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$string</span> <span class="o">=</span> <span class="s2">&quot;Here is a nice text string about nothing in particular.&quot;</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nx">highlight_phrase</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="s2">&quot;nice text&quot;</span><span class="p">,</span> <span class="s1">&#39;&lt;span style=&quot;color:#990000;&quot;&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;/span&gt;&#39;</span><span class="p">);</span>
 </pre></div>
@@ -703,7 +703,7 @@ such browsers:</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$charlim</strong> (<em>int</em>) &#8211; Character limit</li>
 </ul>
@@ -719,7 +719,7 @@ such browsers:</p>
 </table>
 <p>Wraps text at the specified <em>character</em> count while maintaining
 complete words.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$string</span> <span class="o">=</span> <span class="s2">&quot;Here is a simple string of text that will help us demonstrate this function.&quot;</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nx">word_wrap</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="mi">25</span><span class="p">);</span>
 
@@ -739,7 +739,7 @@ complete words.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$max_length</strong> (<em>int</em>) &#8211; String length limit</li>
 <li><strong>$position</strong> (<em>mixed</em>) &#8211; Position to split at (int or float)</li>
@@ -764,7 +764,7 @@ example. a value of 1 will place the ellipsis at the right of the
 string, .5 in the middle, and 0 at the left.</p>
 <p>An optional forth parameter is the kind of ellipsis. By default,
 &amp;hellip; will be inserted.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$str</span> <span class="o">=</span> <span class="s1">&#39;this_string_is_entirely_too_long_and_might_break_my_design.jpg&#39;</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nx">ellipsize</span><span class="p">(</span><span class="nv">$str</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">);</span>
 </pre></div>
@@ -801,7 +801,7 @@ string, .5 in the middle, and 0 at the left.</p>
     </p>
   </div>
 
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Construido con </font></font> <a href="http://sphinx-doc.org/">Sphinx</a> utilizando un <a href="https://github.com/snide/sphinx_rtd_theme">Tenma</a> proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
   
 </footer>
         </div>

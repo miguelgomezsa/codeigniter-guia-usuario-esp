@@ -1178,7 +1178,7 @@ appear and become widely available.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$params</strong> (<em>array</em>) &#8211; Configuration parameters</li>
 </ul>
 </td>
@@ -1193,7 +1193,7 @@ appear and become widely available.</p>
 </table>
 <p>Initializes (configures) the library to use a different
 driver, cipher, mode or key.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">initialize</span><span class="p">(</span>
         <span class="k">array</span><span class="p">(</span><span class="s1">&#39;mode&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;ctr&#39;</span><span class="p">)</span>
 <span class="p">);</span>
@@ -1209,7 +1209,7 @@ driver, cipher, mode or key.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$data</strong> (<em>string</em>) &#8211; Data to encrypt</li>
 <li><strong>$params</strong> (<em>array</em>) &#8211; Optional parameters</li>
 </ul>
@@ -1224,7 +1224,7 @@ driver, cipher, mode or key.</p>
 </tbody>
 </table>
 <p>Encrypts the input data and returns its ciphertext.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$ciphertext</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">encrypt</span><span class="p">(</span><span class="s1">&#39;My secret message&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -1239,7 +1239,7 @@ on the optional parameters.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$data</strong> (<em>string</em>) &#8211; Data to decrypt</li>
 <li><strong>$params</strong> (<em>array</em>) &#8211; Optional parameters</li>
 </ul>
@@ -1254,7 +1254,7 @@ on the optional parameters.</p>
 </tbody>
 </table>
 <p>Decrypts the input data and returns it in plain-text.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">decrypt</span><span class="p">(</span><span class="nv">$ciphertext</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -1269,7 +1269,7 @@ on the optional parameters.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$length</strong> (<em>int</em>) &#8211; Output length</li>
 </ul>
 </td>
@@ -1293,7 +1293,7 @@ the operating system&#8217;s sources (i.e. /dev/urandom).</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>string</em>) &#8211; Input key material</li>
 <li><strong>$digest</strong> (<em>string</em>) &#8211; A SHA-2 family digest algorithm</li>
 <li><strong>$salt</strong> (<em>string</em>) &#8211; Optional salt</li>
@@ -1317,7 +1317,7 @@ from your configured <em>encryption_key</em>.</p>
 described in <a class="reference external" href="https://tools.ietf.org/rfc/rfc5869.txt">RFC 5869</a>.</p>
 <p>However, as opposed to the description in RFC 5869, this implementation
 doesn&#8217;t support SHA1.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$hmac_key</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">hkdf</span><span class="p">(</span>
         <span class="nv">$key</span><span class="p">,</span>
         <span class="s1">&#39;sha512&#39;</span><span class="p">,</span>
@@ -1359,7 +1359,7 @@ doesn&#8217;t support SHA1.</p>
     </p>
   </div>
 
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Construido con </font></font> <a href="http://sphinx-doc.org/">Sphinx</a> utilizando un <a href="https://github.com/snide/sphinx_rtd_theme">Tenma</a> proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
   
 </footer>
         </div>

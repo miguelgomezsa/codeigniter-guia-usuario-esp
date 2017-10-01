@@ -491,7 +491,7 @@ discussion regarding result generation.</p>
 <p><strong>$this-&gt;db-&gt;get_compiled_select()</strong></p>
 <p>Compiles the selection query just like <strong>$this-&gt;db-&gt;get()</strong> but does not <em>run</em>
 the query. This method simply returns the SQL query as a string.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$sql</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">get_compiled_select</span><span class="p">(</span><span class="s1">&#39;mytable&#39;</span><span class="p">);</span>
 <span class="k">echo</span> <span class="nv">$sql</span><span class="p">;</span>
 
@@ -989,7 +989,7 @@ object.</p>
 <p><strong>$this-&gt;db-&gt;get_compiled_insert()</strong></p>
 <p>Compiles the insertion query just like $this-&gt;db-&gt;insert() but does not
 <em>run</em> the query. This method simply returns the SQL query as a string.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;My title&#39;</span><span class="p">,</span>
         <span class="s1">&#39;name&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;My Name&#39;</span><span class="p">,</span>
@@ -1059,7 +1059,7 @@ keys as the determining factor.
 In our case, it will save you from the need to implement complex
 logics with different combinations of  <tt class="docutils literal"><span class="pre">select()</span></tt>, <tt class="docutils literal"><span class="pre">update()</span></tt>,
 <tt class="docutils literal"><span class="pre">delete()</span></tt> and <tt class="docutils literal"><span class="pre">insert()</span></tt> calls.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;My title&#39;</span><span class="p">,</span>
         <span class="s1">&#39;name&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;My Name&#39;</span><span class="p">,</span>
@@ -1458,7 +1458,7 @@ to build a query that can be cancelled under certain conditions.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$prefix</strong> (<em>string</em>) &#8211; The new prefix to use</li>
 </ul>
 </td>
@@ -1481,7 +1481,7 @@ to build a query that can be cancelled under certain conditions.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; The table name to prefix</li>
 </ul>
 </td>
@@ -1504,7 +1504,7 @@ to build a query that can be cancelled under certain conditions.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$reset</strong> (<em>bool</em>) &#8211; Whether to reset values for SELECTs</li>
 </ul>
@@ -1529,7 +1529,7 @@ all records returned by an Query Builder query.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; The table to query</li>
 <li><strong>$limit</strong> (<em>int</em>) &#8211; The LIMIT clause</li>
 <li><strong>$offset</strong> (<em>int</em>) &#8211; The OFFSET clause</li>
@@ -1555,7 +1555,7 @@ called Query Builder methods.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>mixed</em>) &#8211; The table(s) to fetch data from; string or array</li>
 <li><strong>$where</strong> (<em>string</em>) &#8211; The WHERE clause</li>
 <li><strong>$limit</strong> (<em>int</em>) &#8211; The LIMIT clause</li>
@@ -1581,7 +1581,7 @@ called Query Builder methods.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$select</strong> (<em>string</em>) &#8211; The SELECT portion of a query</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
 </ul>
@@ -1605,7 +1605,7 @@ called Query Builder methods.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$select</strong> (<em>string</em>) &#8211; Field to compute the average of</li>
 <li><strong>$alias</strong> (<em>string</em>) &#8211; Alias for the resulting value name</li>
 </ul>
@@ -1629,7 +1629,7 @@ called Query Builder methods.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$select</strong> (<em>string</em>) &#8211; Field to compute the maximum of</li>
 <li><strong>$alias</strong> (<em>string</em>) &#8211; Alias for the resulting value name</li>
 </ul>
@@ -1653,7 +1653,7 @@ called Query Builder methods.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$select</strong> (<em>string</em>) &#8211; Field to compute the minimum of</li>
 <li><strong>$alias</strong> (<em>string</em>) &#8211; Alias for the resulting value name</li>
 </ul>
@@ -1677,7 +1677,7 @@ called Query Builder methods.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$select</strong> (<em>string</em>) &#8211; Field to compute the sum of</li>
 <li><strong>$alias</strong> (<em>string</em>) &#8211; Alias for the resulting value name</li>
 </ul>
@@ -1701,7 +1701,7 @@ called Query Builder methods.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$val</strong> (<em>bool</em>) &#8211; Desired value of the &#8220;distinct&#8221; flag</li>
 </ul>
 </td>
@@ -1725,7 +1725,7 @@ a DISTINCT clause to the SELECT portion of the query.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$from</strong> (<em>mixed</em>) &#8211; Table name(s); string or array</li>
 </ul>
 </td>
@@ -1748,7 +1748,7 @@ a DISTINCT clause to the SELECT portion of the query.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name to join</li>
 <li><strong>$cond</strong> (<em>string</em>) &#8211; The JOIN ON condition</li>
 <li><strong>$type</strong> (<em>string</em>) &#8211; The JOIN type</li>
@@ -1774,7 +1774,7 @@ a DISTINCT clause to the SELECT portion of the query.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>mixed</em>) &#8211; Name of field to compare, or associative array</li>
 <li><strong>$value</strong> (<em>mixed</em>) &#8211; If a single key, compared to this value</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -1800,7 +1800,7 @@ Separates multiple calls with &#8216;AND&#8217;.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>mixed</em>) &#8211; Name of field to compare, or associative array</li>
 <li><strong>$value</strong> (<em>mixed</em>) &#8211; If a single key, compared to this value</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -1826,7 +1826,7 @@ Separates multiple calls with &#8216;OR&#8217;.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>string</em>) &#8211; The field to search</li>
 <li><strong>$values</strong> (<em>array</em>) &#8211; The values searched on</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -1852,7 +1852,7 @@ joined with &#8216;OR&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>string</em>) &#8211; The field to search</li>
 <li><strong>$values</strong> (<em>array</em>) &#8211; The values searched on</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -1878,7 +1878,7 @@ joined with &#8216;OR&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>string</em>) &#8211; Name of field to examine</li>
 <li><strong>$values</strong> (<em>array</em>) &#8211; Array of target values</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -1904,7 +1904,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>string</em>) &#8211; Name of field to examine</li>
 <li><strong>$values</strong> (<em>array</em>) &#8211; Array of target values</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -2010,7 +2010,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$field</strong> (<em>string</em>) &#8211; Field name</li>
 <li><strong>$match</strong> (<em>string</em>) &#8211; Text portion to match</li>
 <li><strong>$side</strong> (<em>string</em>) &#8211; Which side of the expression to put the &#8216;%&#8217; wildcard on</li>
@@ -2036,7 +2036,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$field</strong> (<em>string</em>) &#8211; Field name</li>
 <li><strong>$match</strong> (<em>string</em>) &#8211; Text portion to match</li>
 <li><strong>$side</strong> (<em>string</em>) &#8211; Which side of the expression to put the &#8216;%&#8217; wildcard on</li>
@@ -2062,7 +2062,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$field</strong> (<em>string</em>) &#8211; Field name</li>
 <li><strong>$match</strong> (<em>string</em>) &#8211; Text portion to match</li>
 <li><strong>$side</strong> (<em>string</em>) &#8211; Which side of the expression to put the &#8216;%&#8217; wildcard on</li>
@@ -2088,7 +2088,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$field</strong> (<em>string</em>) &#8211; Field name</li>
 <li><strong>$match</strong> (<em>string</em>) &#8211; Text portion to match</li>
 <li><strong>$side</strong> (<em>string</em>) &#8211; Which side of the expression to put the &#8216;%&#8217; wildcard on</li>
@@ -2114,7 +2114,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>mixed</em>) &#8211; Identifier (string) or associative array of field/value pairs</li>
 <li><strong>$value</strong> (<em>string</em>) &#8211; Value sought if $key is an identifier</li>
 <li><strong>$escape</strong> (<em>string</em>) &#8211; Whether to escape values and identifiers</li>
@@ -2139,7 +2139,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>mixed</em>) &#8211; Identifier (string) or associative array of field/value pairs</li>
 <li><strong>$value</strong> (<em>string</em>) &#8211; Value sought if $key is an identifier</li>
 <li><strong>$escape</strong> (<em>string</em>) &#8211; Whether to escape values and identifiers</li>
@@ -2164,7 +2164,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$by</strong> (<em>mixed</em>) &#8211; Field(s) to group by; string or array</li>
 </ul>
 </td>
@@ -2187,7 +2187,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$orderby</strong> (<em>string</em>) &#8211; Field to order by</li>
 <li><strong>$direction</strong> (<em>string</em>) &#8211; The order requested - ASC, DESC or random</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -2212,7 +2212,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$value</strong> (<em>int</em>) &#8211; Number of rows to limit the results to</li>
 <li><strong>$offset</strong> (<em>int</em>) &#8211; Number of rows to skip</li>
 </ul>
@@ -2236,7 +2236,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$offset</strong> (<em>int</em>) &#8211; Number of rows to skip</li>
 </ul>
 </td>
@@ -2259,7 +2259,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>mixed</em>) &#8211; Field name, or an array of field/value pairs</li>
 <li><strong>$value</strong> (<em>string</em>) &#8211; Field value, if $key is a single field</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -2285,7 +2285,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$set</strong> (<em>array</em>) &#8211; An associative array of field/value pairs</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -2310,7 +2310,7 @@ joined with &#8216;AND&#8217; if appropriate.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$set</strong> (<em>array</em>) &#8211; Data to insert</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -2342,7 +2342,7 @@ up to <tt class="docutils literal"><span class="pre">$batch_size</span></tt> row
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>mixed</em>) &#8211; Field name or an array of field/value pairs</li>
 <li><strong>$value</strong> (<em>string</em>) &#8211; Field value, if $key is a single field</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -2367,7 +2367,7 @@ up to <tt class="docutils literal"><span class="pre">$batch_size</span></tt> row
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$set</strong> (<em>array</em>) &#8211; An associative array of field/value pairs</li>
 <li><strong>$where</strong> (<em>string</em>) &#8211; The WHERE clause</li>
@@ -2393,7 +2393,7 @@ up to <tt class="docutils literal"><span class="pre">$batch_size</span></tt> row
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$set</strong> (<em>array</em>) &#8211; Field name, or an associative array of field/value pairs</li>
 <li><strong>$value</strong> (<em>string</em>) &#8211; Field value, if $set is a single field</li>
@@ -2425,7 +2425,7 @@ multiple queries will be executed, each handling up to
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>mixed</em>) &#8211; Field name or an array of field/value pairs</li>
 <li><strong>$value</strong> (<em>string</em>) &#8211; Field value, if $key is a single field</li>
 <li><strong>$escape</strong> (<em>bool</em>) &#8211; Whether to escape values and identifiers</li>
@@ -2450,7 +2450,7 @@ multiple queries will be executed, each handling up to
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$set</strong> (<em>array</em>) &#8211; An associative array of field/value pairs</li>
 </ul>
@@ -2474,7 +2474,7 @@ multiple queries will be executed, each handling up to
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>mixed</em>) &#8211; The table(s) to delete from; string or array</li>
 <li><strong>$where</strong> (<em>string</em>) &#8211; The WHERE clause</li>
 <li><strong>$limit</strong> (<em>int</em>) &#8211; The LIMIT clause</li>
@@ -2500,7 +2500,7 @@ multiple queries will be executed, each handling up to
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 </ul>
 </td>
@@ -2528,7 +2528,7 @@ a DELETE statement will be used instead.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 </ul>
 </td>
@@ -2551,7 +2551,7 @@ a DELETE statement will be used instead.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$reset</strong> (<em>bool</em>) &#8211; Whether to reset the current QB values or not</li>
 </ul>
@@ -2575,7 +2575,7 @@ a DELETE statement will be used instead.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$reset</strong> (<em>bool</em>) &#8211; Whether to reset the current QB values or not</li>
 </ul>
@@ -2599,7 +2599,7 @@ a DELETE statement will be used instead.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$reset</strong> (<em>bool</em>) &#8211; Whether to reset the current QB values or not</li>
 </ul>
@@ -2623,7 +2623,7 @@ a DELETE statement will be used instead.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 <li><strong>$reset</strong> (<em>bool</em>) &#8211; Whether to reset the current QB values or not</li>
 </ul>
@@ -2668,7 +2668,7 @@ a DELETE statement will be used instead.</p>
     </p>
   </div>
 
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Construido con </font></font> <a href="http://sphinx-doc.org/">Sphinx</a> utilizando un <a href="https://github.com/snide/sphinx_rtd_theme">Tenma</a> proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
   
 </footer>
         </div>

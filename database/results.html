@@ -586,7 +586,7 @@ methods allow. This requires that the class is already loaded into memory.
 The object will have all values returned from the database set as properties.
 If these have been declared and are non-public then you should provide a
 <tt class="docutils literal"><span class="pre">__set()</span></tt> method to allow them to be set.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">User</span> <span class="p">{</span>
 
         <span class="k">public</span> <span class="nv">$id</span><span class="p">;</span>
@@ -624,7 +624,7 @@ take a class name to return the results as: <tt class="docutils literal"><span c
 <p><strong>custom_result_object()</strong></p>
 <p>Returns the entire result set as an array of instances of the class requested.
 The only parameter is the name of the class to instantiate.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s2">&quot;YOUR QUERY&quot;</span><span class="p">);</span>
 
 <span class="nv">$rows</span> <span class="o">=</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">custom_result_object</span><span class="p">(</span><span class="s1">&#39;User&#39;</span><span class="p">);</span>
@@ -640,7 +640,7 @@ The only parameter is the name of the class to instantiate.</p>
 <p><strong>custom_row_object()</strong></p>
 <p>Returns a single row from your query results. The first parameter is the row
 number of the results. The second parameter is the class name to instantiate.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s2">&quot;YOUR QUERY&quot;</span><span class="p">);</span>
 
 <span class="nv">$row</span> <span class="o">=</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">custom_row_object</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;User&#39;</span><span class="p">);</span>
@@ -653,7 +653,7 @@ number of the results. The second parameter is the class name to instantiate.</p
 </pre></div>
 </div>
 <p>You can also use the <tt class="docutils literal"><span class="pre">row()</span></tt> method in exactly the same way.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$row</span> <span class="o">=</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">custom_row_object</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;User&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -689,7 +689,7 @@ resource ID. Normally PHP frees its memory automatically at the end of
 script execution. However, if you are running a lot of queries in a
 particular script you might want to free the result after each query
 result has been generated in order to cut down on memory consumption.</p>
-<p>Example:</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s1">&#39;SELECT title FROM my_table&#39;</span><span class="p">);</span>
 
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$query</span><span class="o">-&gt;</span><span class="na">result</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$row</span><span class="p">)</span>
@@ -734,7 +734,7 @@ Most notably - you won&#8217;t be able to use it with PDO.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$type</strong> (<em>string</em>) &#8211; Type of requested results - array, object, or class name</li>
 </ul>
 </td>
@@ -795,7 +795,7 @@ row is an object of type <tt class="docutils literal"><span class="pre">stdClass
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$class_name</strong> (<em>string</em>) &#8211; Class name for the resulting rows</li>
 </ul>
 </td>
@@ -819,7 +819,7 @@ row is an instance of the specified class.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$n</strong> (<em>int</em>) &#8211; Index of the query results row to be returned</li>
 <li><strong>$type</strong> (<em>string</em>) &#8211; Type of the requested result - array, object, or class name</li>
 </ul>
@@ -845,7 +845,7 @@ row is an instance of the specified class.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$type</strong> (<em>string</em>) &#8211; Type of the requested result - array, object, or class name</li>
 </ul>
 </td>
@@ -870,7 +870,7 @@ requested form.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$n</strong> (<em>int</em>) &#8211; Index of the query results row to be returned</li>
 </ul>
 </td>
@@ -894,7 +894,7 @@ requested form.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$n</strong> (<em>int</em>) &#8211; Index of the query results row to be returned</li>
 </ul>
 </td>
@@ -919,7 +919,7 @@ requested form.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$n</strong> (<em>int</em>) &#8211; Index of the results row to return</li>
 <li><strong>$class_name</strong> (<em>string</em>) &#8211; Class name for the resulting row</li>
 </ul>
@@ -944,7 +944,7 @@ requested class.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$n</strong> (<em>int</em>) &#8211; Index of the results row to be returned next</li>
 </ul>
 </td>
@@ -968,7 +968,7 @@ requested class.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>mixed</em>) &#8211; Column name or array of key/value pairs</li>
 <li><strong>$value</strong> (<em>mixed</em>) &#8211; Value to assign to the column, $key is a single field name</li>
 </ul>
@@ -989,7 +989,7 @@ requested class.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$type</strong> (<em>string</em>) &#8211; Type of the requested result - array, object, or class name</li>
 </ul>
 </td>
@@ -1012,7 +1012,7 @@ requested class.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$type</strong> (<em>string</em>) &#8211; Type of the requested result - array, object, or class name</li>
 </ul>
 </td>
@@ -1035,7 +1035,7 @@ requested class.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$type</strong> (<em>string</em>) &#8211; Type of the requested result - array, object, or class name</li>
 </ul>
 </td>
@@ -1058,7 +1058,7 @@ requested class.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$type</strong> (<em>string</em>) &#8211; Type of the requested result - array, object, or class name</li>
 </ul>
 </td>
@@ -1185,7 +1185,7 @@ result set.</p>
     </p>
   </div>
 
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Construido con </font></font> <a href="http://sphinx-doc.org/">Sphinx</a> utilizando un <a href="https://github.com/snide/sphinx_rtd_theme">Tenma</a> proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
   
 </footer>
         </div>
