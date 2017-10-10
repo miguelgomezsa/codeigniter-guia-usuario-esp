@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Profiling Your Application &mdash; CodeIgniter 3.1.6 documentation</title>
+  <title>Upgrading from 3.1.5 to 3.1.6 &mdash; CodeIgniter 3.1.6 documentation</title>
   
 
   
@@ -34,9 +34,9 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="CodeIgniter 3.1.6 documentation" href="../index.html"/>
-        <link rel="up" title="General Topics" href="index.html"/>
-        <link rel="next" title="Running via the CLI" href="cli.html"/>
-        <link rel="prev" title="Web Page Caching" href="caching.html"/> 
+        <link rel="up" title="Upgrading From a Previous Version" href="upgrading.html"/>
+        <link rel="next" title="Upgrading from 3.1.4 to 3.1.5" href="upgrade_315.html"/>
+        <link rel="prev" title="Upgrading From a Previous Version" href="upgrading.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -52,14 +52,14 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to CodeIgniter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Welcome to CodeIgniter</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Installation Instructions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../installation/downloads.html">Downloading CodeIgniter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/index.html">Installation Instructions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/upgrading.html">Upgrading From a Previous Version</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/troubleshooting.html">Troubleshooting</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation Instructions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="downloads.html">Downloading CodeIgniter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html">Installation Instructions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="upgrading.html">Upgrading From a Previous Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 </ul>
 </li>
 </ul>
@@ -90,34 +90,34 @@
 </ul>
 </li>
 </ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">General Topics</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="urls.html">CodeIgniter URLs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
-<li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html">Models</a></li>
-<li class="toctree-l2"><a class="reference internal" href="helpers.html">Helpers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="libraries.html">Using CodeIgniter Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Creating Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="drivers.html">Using CodeIgniter Drivers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="creating_drivers.html">Creating Drivers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="core_classes.html">Creating Core System Classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ancillary_classes.html">Creating Ancillary Classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hooks.html">Hooks - Extending the Framework Core</a></li>
-<li class="toctree-l2"><a class="reference internal" href="autoloader.html">Auto-loading Resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="common_functions.html">Common Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="compatibility_functions.html">Compatibility Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="routing.html">URI Routing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="errors.html">Error Handling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="caching.html">Caching</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Profiling Your Application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cli.html">Running via the CLI</a></li>
-<li class="toctree-l2"><a class="reference internal" href="managing_apps.html">Managing your Applications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="environments.html">Handling Multiple Environments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="alternative_php.html">Alternate PHP Syntax for View Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="security.html">Security</a></li>
-<li class="toctree-l2"><a class="reference internal" href="styleguide.html">PHP Style Guide</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/index.html">General Topics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../general/urls.html">CodeIgniter URLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Using CodeIgniter Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Creating Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/drivers.html">Using CodeIgniter Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/creating_drivers.html">Creating Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/core_classes.html">Creating Core System Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/ancillary_classes.html">Creating Ancillary Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/hooks.html">Hooks - Extending the Framework Core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/autoloader.html">Auto-loading Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/common_functions.html">Common Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/compatibility_functions.html">Compatibility Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/routing.html">URI Routing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/errors.html">Error Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/caching.html">Caching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/profiling.html">Profiling Your Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/cli.html">Running via the CLI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/managing_apps.html">Managing your Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/environments.html">Handling Multiple Environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/alternative_php.html">Alternate PHP Syntax for View Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/security.html">Security</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/styleguide.html">PHP Style Guide</a></li>
 </ul>
 </li>
 </ul>
@@ -236,14 +236,14 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to CodeIgniter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Welcome to CodeIgniter</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Installation Instructions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../installation/downloads.html">Downloading CodeIgniter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/index.html">Installation Instructions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/upgrading.html">Upgrading From a Previous Version</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/troubleshooting.html">Troubleshooting</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation Instructions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="downloads.html">Downloading CodeIgniter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html">Installation Instructions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="upgrading.html">Upgrading From a Previous Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 </ul>
 </li>
 </ul>
@@ -274,34 +274,34 @@
 </ul>
 </li>
 </ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">General Topics</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="urls.html">CodeIgniter URLs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
-<li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html">Models</a></li>
-<li class="toctree-l2"><a class="reference internal" href="helpers.html">Helpers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="libraries.html">Using CodeIgniter Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Creating Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="drivers.html">Using CodeIgniter Drivers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="creating_drivers.html">Creating Drivers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="core_classes.html">Creating Core System Classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ancillary_classes.html">Creating Ancillary Classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hooks.html">Hooks - Extending the Framework Core</a></li>
-<li class="toctree-l2"><a class="reference internal" href="autoloader.html">Auto-loading Resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="common_functions.html">Common Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="compatibility_functions.html">Compatibility Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="routing.html">URI Routing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="errors.html">Error Handling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="caching.html">Caching</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Profiling Your Application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cli.html">Running via the CLI</a></li>
-<li class="toctree-l2"><a class="reference internal" href="managing_apps.html">Managing your Applications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="environments.html">Handling Multiple Environments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="alternative_php.html">Alternate PHP Syntax for View Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="security.html">Security</a></li>
-<li class="toctree-l2"><a class="reference internal" href="styleguide.html">PHP Style Guide</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/index.html">General Topics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../general/urls.html">CodeIgniter URLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Using CodeIgniter Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Creating Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/drivers.html">Using CodeIgniter Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/creating_drivers.html">Creating Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/core_classes.html">Creating Core System Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/ancillary_classes.html">Creating Ancillary Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/hooks.html">Hooks - Extending the Framework Core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/autoloader.html">Auto-loading Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/common_functions.html">Common Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/compatibility_functions.html">Compatibility Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/routing.html">URI Routing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/errors.html">Error Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/caching.html">Caching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/profiling.html">Profiling Your Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/cli.html">Running via the CLI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/managing_apps.html">Managing your Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/environments.html">Handling Multiple Environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/alternative_php.html">Alternate PHP Syntax for View Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/security.html">Security</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/styleguide.html">PHP Style Guide</a></li>
 </ul>
 </li>
 </ul>
@@ -408,9 +408,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-        <li><a href="index.html">General Topics</a> &raquo;</li>
+        <li><a href="index.html">Installation Instructions</a> &raquo;</li>
       
-    <li>Profiling Your Application</li>
+        <li><a href="upgrading.html">Upgrading From a Previous Version</a> &raquo;</li>
+      
+    <li>Upgrading from 3.1.5 to 3.1.6</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -422,134 +424,31 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="profiling-your-application">
-<h1>Profiling Your Application<a class="headerlink" href="#profiling-your-application" title="Permalink to this headline">¶</a></h1>
-<p>The Profiler Class will display benchmark results, queries you have run,
-and <code class="docutils literal"><span class="pre">$_POST</span></code> data at the bottom of your pages. This information can be
-useful during development in order to help with debugging and
-optimization.</p>
-<div class="section" id="initializing-the-class">
-<h2>Initializing the Class<a class="headerlink" href="#initializing-the-class" title="Permalink to this headline">¶</a></h2>
-<div class="admonition important">
-<p class="first admonition-title">Important</p>
-<p class="last">This class does NOT need to be initialized. It is loaded
-automatically by the <a class="reference internal" href="../libraries/output.html"><span class="doc">Output Library</span></a>
-if profiling is enabled as shown below.</p>
-</div>
-</div>
-<div class="section" id="enabling-the-profiler">
-<h2>Enabling the Profiler<a class="headerlink" href="#enabling-the-profiler" title="Permalink to this headline">¶</a></h2>
-<p>To enable the profiler place the following line anywhere within your
-<a class="reference internal" href="controllers.html"><span class="doc">Controller</span></a> methods:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">output</span><span class="o">-&gt;</span><span class="na">enable_profiler</span><span class="p">(</span><span class="k">TRUE</span><span class="p">);</span>
-</pre></div>
-</div>
-<p>When enabled a report will be generated and inserted at the bottom of
-your pages.</p>
-<p>To disable the profiler you will use:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">output</span><span class="o">-&gt;</span><span class="na">enable_profiler</span><span class="p">(</span><span class="k">FALSE</span><span class="p">);</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="setting-benchmark-points">
-<h2>Setting Benchmark Points<a class="headerlink" href="#setting-benchmark-points" title="Permalink to this headline">¶</a></h2>
-<p>In order for the Profiler to compile and display your benchmark data you
-must name your mark points using specific syntax.</p>
-<p>Please read the information on setting Benchmark points in the
-<a class="reference internal" href="../libraries/benchmark.html"><span class="doc">Benchmark Library</span></a> page.</p>
-</div>
-<div class="section" id="enabling-and-disabling-profiler-sections">
-<h2>Enabling and Disabling Profiler Sections<a class="headerlink" href="#enabling-and-disabling-profiler-sections" title="Permalink to this headline">¶</a></h2>
-<p>Each section of Profiler data can be enabled or disabled by setting a
-corresponding config variable to TRUE or FALSE. This can be done one of
-two ways. First, you can set application wide defaults with the
-<em>application/config/profiler.php</em> config file.</p>
-<p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;config&#39;</span><span class="p">]</span>          <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span>
-<span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;queries&#39;</span><span class="p">]</span>         <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span>
-</pre></div>
-</div>
-<p>In your controllers, you can override the defaults and config file
-values by calling the <code class="docutils literal"><span class="pre">set_profiler_sections()</span></code> method of the
-<a class="reference internal" href="../libraries/output.html"><span class="doc">Output Library</span></a>:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$sections</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-        <span class="s1">&#39;config&#39;</span>  <span class="o">=&gt;</span> <span class="k">TRUE</span><span class="p">,</span>
-        <span class="s1">&#39;queries&#39;</span> <span class="o">=&gt;</span> <span class="k">TRUE</span>
-<span class="p">);</span>
-
-<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">output</span><span class="o">-&gt;</span><span class="na">set_profiler_sections</span><span class="p">(</span><span class="nv">$sections</span><span class="p">);</span>
-</pre></div>
-</div>
-<p>Available sections and the array key used to access them are described
-in the table below.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="23%" />
-<col width="68%" />
-<col width="8%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Key</th>
-<th class="head">Description</th>
-<th class="head">Default</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><strong>benchmarks</strong></td>
-<td>Elapsed time of Benchmark points and total execution time</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-odd"><td><strong>config</strong></td>
-<td>CodeIgniter Config variables</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-even"><td><strong>controller_info</strong></td>
-<td>The Controller class and method requested</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-odd"><td><strong>get</strong></td>
-<td>Any GET data passed in the request</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-even"><td><strong>http_headers</strong></td>
-<td>The HTTP headers for the current request</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-odd"><td><strong>memory_usage</strong></td>
-<td>Amount of memory consumed by the current request, in bytes</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-even"><td><strong>post</strong></td>
-<td>Any POST data passed in the request</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-odd"><td><strong>queries</strong></td>
-<td>Listing of all database queries executed, including execution time</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-even"><td><strong>uri_string</strong></td>
-<td>The URI of the current request</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-odd"><td><strong>session_data</strong></td>
-<td>Data stored in the current session</td>
-<td>TRUE</td>
-</tr>
-<tr class="row-even"><td><strong>query_toggle_count</strong></td>
-<td>The number of queries after which the query block will default to
-hidden.</td>
-<td>25</td>
-</tr>
-</tbody>
-</table>
+  <div class="section" id="upgrading-from-3-1-5-to-3-1-6">
+<h1>Upgrading from 3.1.5 to 3.1.6<a class="headerlink" href="#upgrading-from-3-1-5-to-3-1-6" title="Permalink to this headline">¶</a></h1>
+<p>Before performing an update you should take your site offline by
+replacing the index.php file with a static one.</p>
+<div class="section" id="step-1-update-your-codeigniter-files">
+<h2>Step 1: Update your CodeIgniter files<a class="headerlink" href="#step-1-update-your-codeigniter-files" title="Permalink to this headline">¶</a></h2>
+<p>Replace all files and directories in your <em>system/</em> directory.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Disabling the <a class="reference internal" href="../database/configuration.html"><span class="doc">save_queries</span></a> setting in
-your database configuration will also effectively disable profiling for
-database queries and render the ‘queries’ setting above useless. You can
-optionally override this setting with <code class="docutils literal"><span class="pre">$this-&gt;db-&gt;save_queries</span> <span class="pre">=</span> <span class="pre">TRUE;</span></code>.
-Without this setting you won’t be able to view the queries or the
-<cite>last_query &lt;database/helpers&gt;</cite>.</p>
+<p class="last">If you have any custom developed files in these directories,
+please make copies of them first.</p>
+</div>
+</div>
+<div class="section" id="step-2-remove-usage-of-the-apc-cache-driver-deprecation">
+<h2>Step 2: Remove usage of the APC Cache driver (deprecation)<a class="headerlink" href="#step-2-remove-usage-of-the-apc-cache-driver-deprecation" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference internal" href="../libraries/caching.html"><span class="doc">Cache Library</span></a> APC driver is now
+deprecated, as the APC extension is effectively dead, as explained in its
+<a class="reference external" href="https://secure.php.net/manual/en/intro.apc.php">PHP Manual page</a>.</p>
+<p>If your application happens to be using it, you can switch to another
+cache driver, as APC support will be removed in a future CodeIgniter
+version.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The driver is still available, but you’re strongly encouraged
+to remove its usage sooner rather than later.</p>
 </div>
 </div>
 </div>
@@ -560,10 +459,10 @@ Without this setting you won’t be able to view the queries or the
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="cli.html" class="btn btn-neutral float-right" title="Running via the CLI">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="upgrade_315.html" class="btn btn-neutral float-right" title="Upgrading from 3.1.4 to 3.1.5">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="caching.html" class="btn btn-neutral" title="Web Page Caching"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="upgrading.html" class="btn btn-neutral" title="Upgrading From a Previous Version"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
