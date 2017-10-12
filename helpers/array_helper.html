@@ -425,24 +425,23 @@
             
   <div class="section" id="array-helper">
 <h1>Array Helper<a class="headerlink" href="#array-helper" title="Permalink to this headline">¶</a></h1>
-<p>The Array Helper file contains functions that assist in working with
-arrays.</p>
+<p>El arhivo Array Helper  te ayuda en en el trabajo con  arrays.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#loading-this-helper" id="id1">Loading this Helper</a></li>
-<li><a class="reference internal" href="#available-functions" id="id2">Available Functions</a></li>
+<li><a class="reference internal" href="#loading-this-helper" id="id1">Cargar este Helper</a></li>
+<li><a class="reference internal" href="#available-functions" id="id2">Funciones Disponibles</a></li>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="loading-this-helper">
-<h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Permalink to this headline">¶</a></h2>
-<p>This helper is loaded using the following code:</p>
+<h2><a class="toc-backref" href="#id1">Cargar este Helper</a><a class="headerlink" href="#loading-this-helper" title="Permalink to this headline">¶</a></h2>
+<p>Este helper se carga usando el siguiente codigo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;array&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="available-functions">
-<h2><a class="toc-backref" href="#id2">Available Functions</a><a class="headerlink" href="#available-functions" title="Permalink to this headline">¶</a></h2>
-<p>The following functions are available:</p>
+<h2><a class="toc-backref" href="#id2">Funciones Disponibles</a><a class="headerlink" href="#available-functions" title="Permalink to this headline">¶</a></h2>
+<p>Las siguientes funciones estan disponibles:</p>
 <dl class="function">
 <dt id="element">
 <tt class="descname">element</tt><big>(</big><em>$item</em>, <em>$array</em><span class="optional">[</span>, <em>$default = NULL</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#element" title="Permalink to this definition">¶</a></dt>
@@ -450,34 +449,32 @@ arrays.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$item</strong> (<em>string</em>) &#8211; Item to fetch from the array</li>
-<li><strong>$array</strong> (<em>array</em>) &#8211; Input array</li>
-<li><strong>$default</strong> (<em>bool</em>) &#8211; What to return if the array isn&#8217;t valid</li>
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
+<li><strong>$item</strong> (<em>string</em>) &#8211; Elemento que se va a buscar desde la matriz</li>
+<li><strong>$array</strong> (<em>array</em>) &#8211; Matriz de entrada</li>
+<li><strong>$default</strong> (<em>bool</em>) &#8211; Que devevolder si la matriz no es valida</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">NULL on failure or the array item.</p>
+<tr class="field-even field"><th class="field-name">Retorna:</th><td class="field-body"><p class="first">NULL en caso de error o el elemento de la matriz.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
+<tr class="field-odd field"><th class="field-name">Tipo de Valor de Retorno:</th><td class="field-body"><p class="first last">mixed</p>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Lets you fetch an item from an array. The function tests whether the
-array index is set and whether it has a value. If a value exists it is
-returned. If a value does not exist it returns NULL, or whatever you&#8217;ve
-specified as the default value via the third parameter.</p>
-<p>Example:</p>
+<p>Le permite buscar un elemento de una matriz. La función comprueba si el índice de matriz está establecido y si tiene un valor. Si existe un valor, se devuelve.
+ Si no existe un valor, devuelve NULL o lo que haya especificado como valor predeterminado a través del tercer parámetro.</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$array</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;color&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span>
         <span class="s1">&#39;shape&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;round&#39;</span><span class="p">,</span>
         <span class="s1">&#39;size&#39;</span>  <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span>
 <span class="p">);</span>
 
-<span class="k">echo</span> <span class="nx">element</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="nv">$array</span><span class="p">);</span> <span class="c1">// returns &quot;red&quot;</span>
-<span class="k">echo</span> <span class="nx">element</span><span class="p">(</span><span class="s1">&#39;size&#39;</span><span class="p">,</span> <span class="nv">$array</span><span class="p">,</span> <span class="s1">&#39;foobar&#39;</span><span class="p">);</span> <span class="c1">// returns &quot;foobar&quot;</span>
+<span class="k">echo</span> <span class="nx">element</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="nv">$array</span><span class="p">);</span> <span class="c1">// regresa &quot;red&quot;</span>
+<span class="k">echo</span> <span class="nx">element</span><span class="p">(</span><span class="s1">&#39;size&#39;</span><span class="p">,</span> <span class="nv">$array</span><span class="p">,</span> <span class="s1">&#39;foobar&#39;</span><span class="p">);</span> <span class="c1">// regresa &quot;foobar&quot;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -489,26 +486,24 @@ specified as the default value via the third parameter.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$item</strong> (<em>string</em>) &#8211; Item to fetch from the array</li>
-<li><strong>$array</strong> (<em>array</em>) &#8211; Input array</li>
-<li><strong>$default</strong> (<em>bool</em>) &#8211; What to return if the array isn&#8217;t valid</li>
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
+<li><strong>$item</strong> (<em>string</em>) &#8211; Elemento que se va a buscar desde la matriz</li>
+<li><strong>$array</strong> (<em>array</em>) &#8211; Matriz de entrada</li>
+<li><strong>$default</strong> (<em>bool</em>) &#8211; Que devevolder si la matriz no es valida</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">NULL on failure or the array item.</p>
+<tr class="field-even field"><th class="field-name">Retorna:</th><td class="field-body"><p class="first">NULL en caso de error o el elemento de la matriz.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
+<tr class="field-odd field"><th class="field-name">Tipo de Valor de Retorno:</th><td class="field-body"><p class="first last">mixed</p>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Lets you fetch a number of items from an array. The function tests
-whether each of the array indices is set. If an index does not exist it
-is set to NULL, or whatever you&#8217;ve specified as the default value via
-the third parameter.</p>
-<p>Example:</p>
+<p>Le permite obtener una serie de elementos de una matriz.  La función comprueba si se ha establecido cada uno de los índices del array.
+ Si no existe un índice, se establece en NULL o lo que haya especificado como valor predeterminado a través del tercer parámetro.</p>
+<p>Ejemplo:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$array</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;color&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span>
         <span class="s1">&#39;shape&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;round&#39;</span><span class="p">,</span>
@@ -519,7 +514,7 @@ the third parameter.</p>
 <span class="nv">$my_shape</span> <span class="o">=</span> <span class="nx">elements</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;shape&#39;</span><span class="p">,</span> <span class="s1">&#39;height&#39;</span><span class="p">),</span> <span class="nv">$array</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>The above will return the following array:</p>
+<p>Lo anterior devolverá la siguiente matriz:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;color&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span>
         <span class="s1">&#39;shape&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;round&#39;</span><span class="p">,</span>
@@ -527,11 +522,11 @@ the third parameter.</p>
 <span class="p">);</span>
 </pre></div>
 </div>
-<p>You can set the third parameter to any default value you like.</p>
+<p>Puede establecer el tercer parámetro en cualquier valor predeterminado que desee.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$my_shape</span> <span class="o">=</span> <span class="nx">elements</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;shape&#39;</span><span class="p">,</span> <span class="s1">&#39;height&#39;</span><span class="p">),</span> <span class="nv">$array</span><span class="p">,</span> <span class="s1">&#39;foobar&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>The above will return the following array:</p>
+<p>Lo anterior devolverá la siguiente matriz:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;color&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span>
         <span class="s1">&#39;shape&#39;</span>         <span class="o">=&gt;</span> <span class="s1">&#39;round&#39;</span><span class="p">,</span>
@@ -539,17 +534,15 @@ the third parameter.</p>
 <span class="p">);</span>
 </pre></div>
 </div>
-<p>This is useful when sending the <tt class="docutils literal"><span class="pre">$_POST</span></tt> array to one of your Modelos.
-This prevents users from sending additional POST data to be entered into
-your tables.</p>
+<p>Esto es útil cuando se envía la matriz <tt class="docutils literal"><span class="pre">$_POST</span></tt> a uno de tus modelos.
+Esto evita que los usuarios envíen datos POST adicionales que se ingresarán en sus tablas.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">model</span><span class="p">(</span><span class="s1">&#39;post_model&#39;</span><span class="p">);</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">post_model</span><span class="o">-&gt;</span><span class="na">update</span><span class="p">(</span>
         <span class="nx">elements</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;content&#39;</span><span class="p">),</span> <span class="nv">$_POST</span><span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
 </div>
-<p>This ensures that only the id, title and content fields are sent to be
-updated.</p>
+<p>Esto garantiza que sólo se envíen los campos id, title y content para que se actualicen.</p>
 </dd></dl>
 
 <dl class="function">
@@ -559,7 +552,7 @@ updated.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parámetros:</th><td class="field-body"><ul class="first simple">
 <li><strong>$array</strong> (<em>array</em>) &#8211; Input array</li>
 </ul>
 </td>
@@ -567,20 +560,20 @@ updated.</p>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A random element from the array</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
+<tr class="field-odd field"><th class="field-name">Tipo de Valor de Retorno:</th><td class="field-body"><p class="first last">mixed</p>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Takes an array as input and returns a random element from it.</p>
-<p>Usage example:</p>
+<p>Toma un  array como entrada y devuelve un elemento suyo al azar.</p>
+<p>Ejemplo de uso:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$quotes</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
-        <span class="s2">&quot;I find that the harder I work, the more luck I seem to have. - Thomas Jefferson&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Don&#39;t stay in bed, unless you can make money in bed. - George Burns&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;We didn&#39;t lose the game; we just ran out of time. - Vince Lombardi&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;If everything seems under control, you&#39;re not going fast enough. - Mario Andretti&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Reality is merely an illusion, albeit a very persistent one. - Albert Einstein&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Chance favors the prepared mind - Louis Pasteur&quot;</span>
+        <span class="s2">&quot;Me parece que cuanto trabajo más duro, más suerte parezco tener. - Thomas Jefferson&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;No te quedes en la cama, a menos que puedas hacer dinero en ella. - George Burns&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;No perdimos el juego, simplemente nos quedamos sin tiempo. - Vince Lombardi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;"Si todo parece bajo control, usted no va lo suficientemente rápido. - Mario Andretti&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;La realidad es simplemente una ilusión, aunque una muy persistente. - Albert Einstein&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;La suerte favorece a la mente preparada. - Louis Pasteur&quot;</span>
 <span class="p">);</span>
 
 <span class="k">echo</span> <span class="nx">random_element</span><span class="p">(</span><span class="nv">$quotes</span><span class="p">);</span>
@@ -614,7 +607,7 @@ updated.</p>
     </p>
   </div>
 
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Construido con </font></font> <a href="http://sphinx-doc.org/">Sphinx</a> utilizando un <a href="https://github.com/snide/sphinx_rtd_theme">Tenma</a> proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
   
 </footer>
         </div>
