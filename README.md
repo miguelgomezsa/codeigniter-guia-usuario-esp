@@ -17,4 +17,4 @@ desde ramas de características y hacer peticiones pull a la rama *develop* de e
 ## Soporte y/o Ayuda 
 
 * Podrá conseguir más ayuda en la comunidad de Google+ de Codeigniter en Español
-* El propietario de este mismo repositorio o cualquier de sus colaboradores
+* El propietario de este mismo repositorio o cualquiera de sus colaboradores
